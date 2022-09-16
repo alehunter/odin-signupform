@@ -2,116 +2,59 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
-
-.maincontainer{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 100vh;
     
-    position: fixed;
 }
 
-.leftside{
+.container{
+  
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-
-    
-    width: 40%;
-    height: 100%;
+    align-items: center;
     
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(182,253,45,1) 100%);
 
-    border-right: 5px solid salmon;
+}
+
+.tiger{
+    
+    height: 60%;
+    margin-bottom: 50px;
+}
+
+.logo{
+    font-family: myfont;
+    color: lightcoral;
+    text-align: center;
+    font-size: xx-large;
+    white-space: nowrap;
 
 }
 
-.logocontainer{
-    display: flex;
-    flex: row;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-    top: 25vh;
-    width:100%;
-    height:20%;
-
-}
-
-img{
-    position: relative;
-    height: 300%;
-}
-
-
-
-.rightside{
+.forms{
+    display: grid;
     width: 60%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.r1{
+    margin-top: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 80px;
     
-    width: 100%;
-    height: 30%;
-    background-color: aliceblue;
-}
-
-.r1text{
-    
-    margin-left: 5%;
-    margin-top: 5%;
-    
-    font-size: 20px;
-    box-shadow: 5px;
-    width: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    padding: 5px;
-    border-radius: 20px;
-}
-
-.r2{
-    width: 100%;
-    height: 50%;
-    background-color: aqua;
-
-    display: flex;
-    flex-direction: column;
-    box-shadow: 5px 10px black;
-}
-
-.r2header{
-    position: relative;
-    top: 10%;
-    left: 5%;
-    border: 5px solid red;
-}
-
-.r2forms{
-    position: relative;
-    left: 5%;
-    margin-top: 10%;
-    border: 5px solid red;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     
 }
 
-.r2forms .input{
-    position: relative;
-    top: 10%;
-}
 
-
-
-.r3{
-    width: 100%;
+.input{
     display: flex;
     flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.input label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url("./assets/font.ttf");
 }
